@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoMeca"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="AutoMeca - Maintenance Industrielle" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen" Backgriybd="#F4F6F9">
+    <Grid margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Text="AutoMeca" FontSize="28" FontWeight="Bold" 
+					Foreground="#2C3E50" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Text="Sélectionnez un module pour continuer" FontSize="14" 
+					Foreground="#7F8C8D" HorizontalAlignment="Center" Margin="0,5,0,30"/>
+
+		<!-- Button Grid -->
+		<UniformGrid Grid.row="2" Rows="2" Columns="2">
+
+			<!-- Maintenance Button -->
+			
+			<!-- Stock Button -->
+			<!-- Machine Button -->
+			<!-- Fournisseurs Button --> 
 
     </Grid>
 </Window>
