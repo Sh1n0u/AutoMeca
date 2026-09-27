@@ -24,7 +24,14 @@
 		<UniformGrid Grid.row="2" Rows="2" Columns="2">
 
 			<!-- Maintenance Button -->
-			
+			<Button Margin="10" Click="BtnMaintenance_Click" Background="White" BorderBrush="#BDC3C7" BorderThickness="1">
+				<StackPanel VerticalAlignment="Center">
+					<TextBlock text="&#xE90F;" FontSize="32" HorizontalAlignment="Center"/>
+					<TextBlock text="Maintenance" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" margin="0,10,0,0"/>
+					<TextBlock text="Ordre de travail &amp; pannes" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Button>
+
 			<!-- Stock Button -->
 			<!-- Machine Button -->
 			<!-- Fournisseurs Button --> 
