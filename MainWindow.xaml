@@ -4,10 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoMeca"
-        mc:Ignorable="d"
         Title="AutoMeca - Maintenance Industrielle" Height="500" Width="800"
-        WindowStartupLocation="CenterScreen" Backgriybd="#F4F6F9">
-    <Grid margin="30">
+        WindowStartupLocation="CenterScreen" Background="#F4F6F9">
+    <Grid Margin="30">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -21,20 +20,45 @@
 					Foreground="#7F8C8D" HorizontalAlignment="Center" Margin="0,5,0,30"/>
 
 		<!-- Button Grid -->
-		<UniformGrid Grid.row="2" Rows="2" Columns="2">
+		<UniformGrid Grid.Row="2" Rows="2" Columns="2">
 
 			<!-- Maintenance Button -->
 			<Button Margin="10" Click="BtnMaintenance_Click" Background="White" BorderBrush="#BDC3C7" BorderThickness="1">
 				<StackPanel VerticalAlignment="Center">
-					<TextBlock text="&#xE90F;" FontSize="32" HorizontalAlignment="Center"/>
-					<TextBlock text="Maintenance" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" margin="0,10,0,0"/>
-					<TextBlock text="Ordre de travail &amp; pannes" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
+					<TextBlock Text="&#xE90F;" FontFamily="Segoe MDL2 Assets" FontSize="32" HorizontalAlignment="Center"/>
+					<TextBlock Text="Maintenance" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+					<TextBlock Text="Ordre de travail &amp; pannes" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
 				</StackPanel>
 			</Button>
 
 			<!-- Stock Button -->
-			<!-- Machine Button -->
-			<!-- Fournisseurs Button --> 
+            <Button Margin="10" Click="BtnStock_Click" Background="White" BorderBrush="#BDC3C7" BorderThickness="1">
+				<StackPanel VerticalAlignment="Center">
+					<TextBlock Text="&#xF133;" FontFamily="Segoe MDL2 Assets" FontSize="32" HorizontalAlignment="Center"/>
+					<TextBlock Text="Stock" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+					<TextBlock Text="Pièces détachées" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Button>
 
+			<!-- Machine Button -->
+            <Button Margin="10" Click="BtnMachine_Click" Background="White" BorderBrush="#BDC3C7" BorderThickness="1">
+				<StackPanel VerticalAlignment="Center">
+					<TextBlock Text="&#xE713;" FontFamily="Segoe MDL2 Assets" FontSize="32" HorizontalAlignment="Center"/>
+					<TextBlock Text="Stock" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+					<TextBlock Text="Liste des machines" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Button>
+
+			<!-- Fournisseurs Button -->
+            <Button Margin="10" Click="BtnFournisseurs_Click" Background="White" BorderBrush="#BDC3C7" BorderThickness="1">
+				<StackPanel VerticalAlignment="Center">
+					<TextBlock Text="&#xEB4D;" FontFamily="Segoe MDL2 Assets" FontSize="32" HorizontalAlignment="Center"/>
+					<TextBlock Text="Fournisseurs" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+					<TextBlock Text="Liste des fournisseurs" FontSize="11"  Foreground="#7F8C8D" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Button> 
+        </UniformGrid>
+
+		
     </Grid>
 </Window>
